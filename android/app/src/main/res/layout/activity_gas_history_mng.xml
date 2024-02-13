@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--상단 타이틀 영역-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0072C3"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="#ffffff"
+            android:padding="0dp"
+            >
+            <!--타이틀-->
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:scale_base_width="100"
+                app:scale_base_height="13"
+                >
+                <!--좌측상단 뒤로가기-->
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_bar_back"
+                    app:scale_height="10"
+                    app:scale_left="2"
+                    app:scale_top="2"
+                    app:scale_width="10" />
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/nanumgothic"
+                    android:textColor="#ffffff"
+                    android:text="주유비 관리"
+                    app:scale_textsize="7"
+                    app:scale_left="0"
+                    app:scale_top="0"
+                    app:scale_width="100"
+                    app:scale_height="13"
+                    />
+                <TextView
+                    android:id="@+id/tvRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/nanumgothic"
+                    android:textColor="#ffffff"
+                    android:text="새로\n고침"
+                    app:scale_textsize="5"
+                    app:scale_left="80"
+                    app:scale_top="0"
+                    app:scale_width="20"
+                    app:scale_height="13"
+                    />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <!--메인 컨텐츠영역-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <!--메인리스트-->
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:background="@drawable/bg_tile_cookzzang_ci_01"
+                >
+
+                <!--날짜지정영역-->
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:id="@+id/scSearchDateArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_width="100"
+                    app:scale_base_height="21"
+                    android:background="#EDF2FF" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_red_circle_10_fill"
+                        android:text="-2월"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:textColor="#FFFFFF"
+                        android:onClick="moveSearchDate"
+                        android:tag="-2"
+                        app:scale_textsize="4.5"
+                        app:scale_width="15"
+                        app:scale_height="15"
+                        app:scale_left="1"
+                        app:scale_top="2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_red_circle_10_fill"
+                        android:text="-1월"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:textColor="#FFFFFF"
+                        android:onClick="moveSearchDate"
+                        android:tag="-1"
+                        app:scale_textsize="4.5"
+                        app:scale_width="15"
+                        app:scale_height="15"
+                        app:scale_left="18"
+                        app:scale_top="2" />
+
+                    <TextView
+                        android:id="@+id/searchDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="02월"
+                        android:textColor="#175B9B"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:gravity="center_vertical"
+                        android:textAlignment="center"
+                        app:scale_width="28"
+                        app:scale_height="15"
+                        app:scale_left="35.5"
+                        app:scale_top="2"
+                        app:scale_textsize="10" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_blue_circle_10_fill"
+                        android:text="+1월"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:textColor="#FFFFFF"
+                        android:onClick="moveSearchDate"
+                        android:tag="1"
+                        app:scale_textsize="4.5"
+                        app:scale_width="15"
+                        app:scale_height="15"
+                        app:scale_left="67"
+                        app:scale_top="2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_blue_circle_10_fill"
+                        android:text="+2월"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:textColor="#FFFFFF"
+                        android:onClick="moveSearchDate"
+                        android:tag="2"
+                        app:scale_textsize="4.5"
+                        app:scale_width="15"
+                        app:scale_height="15"
+                        app:scale_left="84"
+                        app:scale_top="2" />
+
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#b9b8b8"/>
+
+                <!--메인 컨텐츠영역-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <!--리스트(세로)-->
+                    <ScrollView
+                        android:id="@+id/scrollItemList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#00FFFFFF"
+                        >
+                        <LinearLayout
+                            android:id="@+id/llItemList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="0dp"
+                            >
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--하단 버튼 표시-->
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:scale_base_width="100"
+                app:scale_base_height="15"
+                >
+                <!--버튼 영역-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:scale_width="100"
+                    app:scale_height="15"
+                    app:scale_left="0"
+                    app:scale_top="0"
+                    >
+                    <com.ssomai.android.scalablelayout.ScalableLayout
+                        android:id="@+id/area_action_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        app:scale_base_width="100"
+                        app:scale_base_height="15"
+                        >
+                        <!--버튼-->
+                        <Button
+                            android:id="@+id/btnSave"
+                            style="@style/btnStyle_09"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nanumgothicbold"
+                            android:text="주유비 입력"
+                            app:scale_width="100"
+                            app:scale_height="15"
+                            app:scale_left="0"
+                            app:scale_top="0"
+                            app:scale_textsize="5"
+                            />
+                    </com.ssomai.android.scalablelayout.ScalableLayout>
+                </LinearLayout>
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+
+        </FrameLayout>
+    </FrameLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "787382950662",
+    "project_id": "cookzzang-a3501",
+    "storage_bucket": "cookzzang-a3501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787382950662:android:3be426d46532e8980fdc87",
+        "android_client_info": {
+          "package_name": "com.gzonesoft.sg623"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787382950662-2g9gnkfam80j16k5c4citc9u2f21ua0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfdPSmibdWjsMdx80Bjb-arnJS-O5gis0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787382950662-2g9gnkfam80j16k5c4citc9u2f21ua0i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "787382950662-bueahro062hv8bf9v5t0cdkjmfqirel4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cookzzang.ioscookzzang"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

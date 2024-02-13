@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <!-- 상단공간 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00454545"
+            android:onClick="clickEvent"
+            android:tag="900"
+            />
+    </LinearLayout>
+
+    <!-- 중간 컨텐츠 들어갈 전체창 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- 좌측공간 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <!-- 전체 컨텐츠 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="1.5dp"
+            >
+
+            <!-- 타이틀 -->
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:scale_base_width="100"
+                app:scale_base_height="14" >
+
+                <View
+                    android:id="@+id/viewBlet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#305597"
+                    app:scale_width="100"
+                    app:scale_height="14"
+                    app:scale_left="0"
+                    app:scale_top="0" />
+
+
+                <TextView
+                    android:id="@+id/tvPopTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumgothicbold"
+                    android:text="공통"
+                    android:background="#FFFFFF"
+                    android:textColor="#175B9B"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textAlignment="textStart"
+                    app:scale_textsize="6"
+                    app:scale_width="94.8"
+                    app:scale_height="13.6"
+                    app:scale_left="5"
+                    app:scale_top="0.2" />
+
+
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+            <!-- 컨텐츠 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:id="@+id/scalableLayout_101"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    app:scale_base_width="100"
+                    app:scale_base_height="20" >
+
+                    <TextView
+                        android:id="@+id/tvMessage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="#FFFFFF"
+                        android:text="111"
+                        android:fontFamily="@font/nanumgothic"
+                        android:textColor="#175B9B"
+                        android:textAlignment="center"
+                        app:scale_textsize="5"
+                        app:scale_top="0"
+                        app:scale_left="0"
+                        app:scale_width="100"
+                        app:scale_height="20" />
+
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:id="@+id/scalableLayout_102"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    app:scale_base_width="100"
+                    app:scale_base_height="20" >
+
+                    <TextView
+                        android:id="@+id/tvMessage2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="#FFFFFF"
+                        android:text="222"
+                        android:fontFamily="@font/nanumgothic"
+                        android:textColor="#175B9B"
+                        android:textAlignment="center"
+                        app:scale_textsize="5"
+                        app:scale_top="2"
+                        app:scale_left="0"
+                        app:scale_width="100"
+                        app:scale_height="20" />
+
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+            </LinearLayout>
+
+            <!-- 하단버튼 -->
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:scale_base_width="100"
+                app:scale_base_height="14" >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#0753A1"
+                    android:onClick="clickEvent"
+                    android:tag="101"
+                    app:scale_left="0"
+                    app:scale_top="0"
+                    app:scale_width="50"
+                    app:scale_height="14" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#9A9999"
+                    android:onClick="clickEvent"
+                    android:tag="102"
+                    app:scale_left="50.2"
+                    app:scale_top="0"
+                    app:scale_width="49.8"
+                    app:scale_height="14" />
+
+                <TextView
+                    android:id="@+id/tvOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="확 인"
+                    android:fontFamily="@font/nanumgothicbold"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:onClick="clickEvent"
+                    android:tag="201"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_left="0"
+                    app:scale_width="50"
+                    app:scale_height="14" />
+
+                <TextView
+                    android:id="@+id/tvCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="취 소"
+                    android:fontFamily="@font/nanumgothicbold"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:onClick="clickEvent"
+                    android:tag="202"
+                    app:scale_textsize="5"
+                    app:scale_top="0"
+                    app:scale_left="50"
+                    app:scale_width="50"
+                    app:scale_height="14" />
+
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        </LinearLayout>
+
+        <!-- 우측공간 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 하단공간 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00454545"
+            android:onClick="clickEvent"
+            android:tag="900"
+            />
+    </LinearLayout>
+
+</LinearLayout>

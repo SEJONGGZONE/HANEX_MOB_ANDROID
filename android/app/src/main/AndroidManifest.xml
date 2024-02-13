@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gzonesoft.sg623">
+    <!-- HDO 권한 -->
+    <application
+        android:name="com.gzonesoft.kt.cookzzang.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_ilove_ci"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_ilove_ci_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cookzzang">
+
+        <activity
+            android:name="com.gzonesoft.sg623.IntroActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cookzzang.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:exported="true"
+            android:name=".pop.SlidePopAuthInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="권한허용 슬라이딩 팝업"
+            android:screenOrientation="unspecified"
+            android:theme="@style/FullscreenTheme" />
+
+
+
+        <activity
+            android:name="com.gzonesoft.sg623.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:resizeableActivity="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cookzzang.NoActionBar"
+            tools:targetApi="24"></activity>
+
+        <activity
+            android:name="com.gzonesoft.sg623.ui.GasHistoryMngActivity"
+            android:exported="true"
+            android:label="주유비관리"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gzonesoft.sg623.ui.InvoiceMngActivity"
+            android:exported="true"
+            android:label="거래명세서관리"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gzonesoft.sg623.ui.DispatchSummaryActivity"
+            android:exported="true"
+            android:label="배차일보"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gzonesoft.sg623.ui.RouteSearchActivity"
+            android:exported="true"
+            android:label="경로조회"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gzonesoft.sg623.pop.PopDetailVehicleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="차량상세"
+            android:screenOrientation="unspecified"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.gzonesoft.sg623.ui.CvoMainActivity"
+            android:exported="true"
+            android:label="차량관제"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gzonesoft.sg623.ui.DeliveryListActivity"
+            android:exported="true"
+            android:label="배차목록조회"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gzonesoft.sg623.ui.PhoneAuthActivity"
+            android:exported="true"
+            android:label="휴대폰인증하기"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gzonesoft.sg623.DriverMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cookzzang.NoActionBar" />
+        <activity
+            android:name="com.gzonesoft.sg623.pop.PopCommonActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.gzonesoft.sg623.pop.PopLastStatusActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="최종상태보고 팝업"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.gzonesoft.sg623.pop.SlidePopClientDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="거래처상세 슬라이딩 팝업"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="com.gzonesoft.sg623.ui.BoardActivity"
+            android:exported="true"
+            android:label="게시판"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gzonesoft.sg623.ui.ItemMngListActivity"
+            android:exported="true"
+            android:label="상품관리"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="6e5v2cudjr" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver
+            android:name="com.gzonesoft.sg623.FirebaseBackgroundService"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.gzonesoft.sg623.service.LocationService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="location"
+            android:theme="@style/Theme.Cookzzang.NoActionBar" /> <!-- 네이버지도,클라이언트 아이디 -->
+        <service
+            android:name="com.gzonesoft.sg623.FirebaseMessageService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<!--    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />-->
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+<!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+<!--    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />-->
+
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+</manifest>

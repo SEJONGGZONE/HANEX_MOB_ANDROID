@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    android:background="@color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:background="@color/transparent"
+        >
+        <!--아이템세팅-->
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:scale_base_width="100"
+            app:scale_base_height="20.4"
+            android:background="#FFFFFF"
+            >
+            <TextView
+                android:id="@+id/tvRouteIdx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="#FFFFFF"
+                android:background="#0072C3"
+                android:text="1"
+                app:scale_left="0.2"
+                app:scale_top="0.2"
+                app:scale_width="10"
+                app:scale_height="10"
+                app:scale_textsize="6"
+                />
+            <TextView
+                android:id="@+id/tvClname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="#0072C3"
+                android:background="#FFFFFF"
+                android:text="델리하우스 - 박미경"
+                app:scale_left="10.2"
+                app:scale_top="0.2"
+                app:scale_width="89.6"
+                app:scale_height="10"
+                app:scale_textsize="6"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#6F7E57C2"
+                app:scale_left="0.2"
+                app:scale_top="10.1"
+                app:scale_width="100"
+                app:scale_height="0.1"
+                />
+            <TextView
+                android:id="@+id/tvItemInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="#111212"
+                android:background="#F1F3FF"
+                android:text="밀크,모짜렐라,치즈볼 외 19건"
+                app:scale_left="0.2"
+                app:scale_top="10.2"
+                app:scale_width="99.6"
+                app:scale_height="10"
+                app:scale_textsize="5"
+                />
+            <View
+                android:id="@+id/ll_listitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00E14D00"
+                app:scale_left="0"
+                app:scale_top="0"
+                app:scale_width="100"
+                app:scale_height="20.4"
+                />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+        <!--거리/시간정보-->
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:scale_base_width="100"
+            app:scale_base_height="10"
+            android:background="#FFFFFF"
+            >
+            <TextView
+                android:id="@+id/tvExpInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="#0072C3"
+                android:background="#FFFFFF"
+                android:text="15:23 예정"
+                app:scale_left="0"
+                app:scale_top="0.2"
+                app:scale_width="50"
+                app:scale_height="10"
+                app:scale_textsize="5"
+                />
+            <TextView
+                android:id="@+id/tvDistInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:textColor="#0072C3"
+                android:background="#FFFFFF"
+                android:text="1.5km 주변"
+                app:scale_left="50"
+                app:scale_top="0.2"
+                app:scale_width="50"
+                app:scale_height="10"
+                app:scale_textsize="5"
+                />
+            <View
+                android:id="@+id/viewDivide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0072C3"
+                app:scale_left="50"
+                app:scale_top="2"
+                app:scale_width="0.2"
+                app:scale_height="6"
+                />
+            <View
+                android:id="@+id/ll_listitem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00E14D00"
+                app:scale_left="0"
+                app:scale_top="0"
+                app:scale_width="100"
+                app:scale_height="20.4"
+                />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFFFFF" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#000000" />
+
+        <!--새로고침버튼영역-리스트마지막에만 표시한다.-->
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:id="@+id/scRefreshArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:scale_base_width="100"
+            app:scale_base_height="20"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:background="@color/transparent"
+            >
+            <TextView
+                android:id="@+id/tvUpdateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_width="100"
+                app:scale_height="5"
+                app:scale_left="0"
+                app:scale_top="0"
+                app:scale_textsize="4"
+                android:text="- Last Update. 03/24 10:50 -"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:textColor="#0753A1"
+                android:fontFamily="@font/nanumgothicbold"
+                />
+            <ImageView
+                android:id="@+id/ivImage11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:src="@drawable/refresh_blue_01"
+                android:onClick="clickRefreshButton"
+                android:tag="700"
+                app:scale_width="15"
+                app:scale_height="15"
+                app:scale_left="42.5"
+                app:scale_top="5"
+                app:scale_textsize="4"
+                />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <!--상태구분(띠)표시-->
+        <LinearLayout
+            android:id="@+id/area_item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:paddingRight="8dp"
+            android:paddingTop="0dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/done_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginRight="-20dp"
+                android:src="@drawable/done_02"
+                android:visibility="gone"/>
+            <View
+                android:id="@+id/done_image_space"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginRight="-20dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/route_index"
+                style="@style/text_listitem_14"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="15dp"
+                android:tag="TITLE"
+                android:text="순서" />
+
+
+            <ImageView
+                android:id="@+id/combine_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="15dp"
+                android:rotation="-30"
+                android:src="@drawable/combine_stamp_02"
+                android:visibility="gone" />
+            <View
+                android:id="@+id/combine_space"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="6dp"
+                android:visibility="visible" />
+
+
+
+            <TextView
+                android:id="@+id/sord_no"
+                style="@style/text_listitem_14"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:tag="TITLE"
+                android:text="단축No" />
+
+            <TextView
+                android:id="@+id/receptname_txt"
+                style="@style/text_listitem_14"
+                android:layout_weight="2"
+                android:layout_marginTop="15dp"
+                android:tag="TITLE"
+                android:text="수취인" />
+
+            <LinearLayout
+                android:id="@+id/err_position_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/err_receptname_txt"
+                    style="@style/text_listitem_14_nomargin"
+                    android:tag="TITLE"
+                    android:text="수취인" />
+
+                <TextView
+                    android:id="@+id/err_position"
+                    style="@style/text_listitem_14_nomargin"
+                    android:tag="TITLE"
+                    android:text="위치오류"
+                    android:textColor="#ff0000"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/request_time"
+                style="@style/text_listitem_14"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:layout_marginTop="15dp"
+                android:tag="TITLE"
+                android:text="요청시간" />
+<!--
+            <TextView
+                android:id="@+id/delivery_time"
+                style="@style/text_listitem_14_right"
+                android:layout_marginRight="0dp"
+                android:layout_weight="2"
+                android:layout_marginTop="15dp"
+                android:tag="TITLE"
+                android:text="실배송시간" />
+-->
+
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/delivery_time"
+                    style="@style/text_listitem_14_right"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:textColor="#f9475b"
+                    android:textStyle="bold"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/plan_time"
+                    style="@style/text_listitem_14_right_02"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:textColor="#8787e6"
+                    android:text=""
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delivery_status"
+                android:layout_width="90dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/delivery_type_nm"
+                    style="@style/text_listitem_14_right"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/delivery_st_nm"
+                    style="@style/text_listitem_14_right"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--부가버튼-->
+        <LinearLayout
+            android:id="@+id/add_action_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:src="@drawable/icon_delivery01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전화걸기"
+                    android:textColor="#818183"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:src="@drawable/icon_delivery02" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="문자전송"
+                    android:textColor="#818183"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imageView3_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:src="@drawable/icon_delivery03" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경로안내"
+                    android:textColor="#818183"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imageView4_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:src="@drawable/icon_delivery05" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="도착보고"
+                    android:textColor="#818183"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:src="@drawable/icon_delivery09" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="위치오류"
+                    android:textColor="#818183"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imageView6_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:src="@drawable/icon_delivery_cancel10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="배송취소"
+                    android:textColor="#818183"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.3dp"-->
+<!--            android:alpha="0.5"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:layout_marginLeft="0dp"-->
+<!--            android:layout_marginRight="0dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#e2e2e2" />-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/delivery_addinfo_area"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="#F5F5F5"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:id="@+id/delivery_address"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:textAlignment="center"-->
+<!--                android:text="-"-->
+<!--                android:textColor="#656580"-->
+<!--                android:textSize="12dp" />-->
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.5dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:layout_marginLeft="0dp"-->
+<!--            android:layout_marginRight="0dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#ffffff" />-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0.5dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:layout_marginLeft="0dp"-->
+<!--            android:layout_marginRight="0dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="#dfdede" />-->
+
+        <View
+            android:id="@+id/foot_dummy"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

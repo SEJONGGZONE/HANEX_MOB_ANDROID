@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginLeft="-10dp"
+        android:background="#3049A5"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="#ffffff">
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:scale_base_height="10"
+            app:scale_base_width="100">
+            <!--타이틀-->
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                app:scale_base_width="100"
+                app:scale_base_height="15"
+                >
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    app:scale_left="0"
+                    app:scale_top="0"
+                    app:scale_width="100"
+                    app:scale_height="15"
+                    app:scale_textsize="6.5"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:text="휴대폰 인증"
+                    android:fontFamily="@font/nanumgothic"
+                    />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?attr/actionBarSize"
+        >
+
+        <ScrollView
+            android:id="@+id/scAlarmList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tile_small_ilove_ci_01"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_width="100"
+                    app:scale_base_height="90"
+                    android:layout_marginTop="5dp"
+                    >
+                    <AutoCompleteTextView
+                        android:id="@+id/tvPhoneNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:backgroundTint="#B35C94D3"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:hint="휴대폰 번호를 입력해주세요"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#202E62"
+                        android:textColorHint="#9A515151"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:scale_textsize="5.5"
+                        app:scale_width="70"
+                        app:scale_height="13"
+                        app:scale_left="6"
+                        app:scale_top="3"
+                        android:tag="100"
+                        />
+                    <Button
+                        android:id="@+id/btnRequestAuth"
+                        android:background="@drawable/selector_style_02"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumgothic"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:text="인증요청"
+                        app:scale_width="23"
+                        app:scale_height="11"
+                        app:scale_left="76"
+                        app:scale_top="3"
+                        app:scale_textsize="4.5"
+                        android:tag="20"
+                        />
+
+                    <TextView
+                        android:textColor="#434242"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:text="휴대폰번호 입력후 '인증요청'버튼을 눌러주세요."
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        app:scale_width="90"
+                        app:scale_height="8"
+                        app:scale_left="6"
+                        app:scale_top="16"
+                        app:scale_textsize="4.3"
+                        />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/tvAuthNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:backgroundTint="#B35C94D3"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:hint="인증번호 입력"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#202E62"
+                        android:textColorHint="#9A515151"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        app:scale_textsize="5.5"
+                        app:scale_width="40"
+                        app:scale_height="13"
+                        app:scale_left="6"
+                        app:scale_top="25"
+                        android:tag="100"
+                        />
+                    <TextView
+                        android:id="@+id/tvAuthNoInfo"
+                        android:textColor="#434242"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumgothicbold"
+                        android:text="(1분이내 입력)"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"
+                        app:scale_width="30"
+                        app:scale_height="11"
+                        app:scale_left="46.5"
+                        app:scale_top="25"
+                        app:scale_textsize="4.3"
+                        />
+
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+                <!--여백추가-->
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_width="100"
+                    app:scale_base_height="30"
+                    >
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            >
+            <!--하단 버튼 표시-->
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:scale_base_width="100"
+                app:scale_base_height="15"
+                >
+                <!--버튼 영역-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:scale_width="100"
+                    app:scale_height="15"
+                    app:scale_left="0"
+                    app:scale_top="0"
+                    >
+                    <com.ssomai.android.scalablelayout.ScalableLayout
+                        android:id="@+id/area_action_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        app:scale_base_width="100"
+                        app:scale_base_height="15"
+                        >
+                        <!--버튼-->
+                        <Button
+                            android:id="@+id/btnSave"
+                            style="@style/btnStyle_09"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nanumgothic"
+                            android:text="확 인 완 료"
+                            app:scale_width="100"
+                            app:scale_height="15"
+                            app:scale_left="0"
+                            app:scale_top="0"
+                            app:scale_textsize="6"
+                            />
+                    </com.ssomai.android.scalablelayout.ScalableLayout>
+                </LinearLayout>
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

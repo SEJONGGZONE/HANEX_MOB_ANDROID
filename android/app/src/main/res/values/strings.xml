@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">SG623-아이사랑</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+
+
+    <string name="notification_channel_message_title">Message</string>
+    <string name="notification_channel_message_description">Receive notification about new message.</string>
+    <string name="notification_channel_comment_title">Comment</string>
+    <string name="notification_channel_comment_description">Receive notification about your post or related post\'s comment.</string>
+    <string name="notification_channel_notice_title">Notice</string>
+    <string name="notification_channel_notice_description">Receive notification about our service\'s notice</string>
+
+
+    <!--통신 관련-->
+    <string name="msg_conn_failure">접속에 실패했습니다.</string>
+    <string name="msg_conn_retry_can">통신상태가 원활하지 않습니다.\n재시도하시겠습니까?</string>
+    <string name="msg_conn_retry">통신상태가 원활하지 않습니다.\n재시도바랍니다.</string>
+    <string name="msg_error_return">오류가 발생했습니다.\n잠시뒤 재시도 바랍니다.</string>
+    <string name="msg_token_empty">토큰정보를 확인하지 못했습니다.\n원활한 사용을 위해 앱을 재구동해주십시오.</string>
+    <string name="login_complete">로그인 완료</string>
+    <string name="title_activity_login">MAtoMS Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_id">ID</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_login">로그인</string>
+    <string name="action_login2">Log-In >></string>
+    <string name="prompt_phone_no">전화번호</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="complete">"complete"</string>
+
+    <!--서비스 요청관련-->
+    <string name="api_service_error">서비스오류. 관리자에게 문의바랍니다.</string>
+    <string name="api_has_nodata">데이타가 없습니다.</string>
+
+    <!--추천하기 관련-->
+    <string name="promote_add_save_success">추천정보가 전달되었습니다.</string>
+
+    <string name="CMM_WORKING">작업중입니다.잠시만 기다려주세요.</string>
+    <string name="CMM_CANCEL">취소되었습니다.</string>
+    <string name="CMM_CONNECTION_FAIL">접속에 실패하였습니다.</string>
+    <!-- 배송지 목록 -->
+    <string name="ROUTE_CONFIRM_OK">배송순서가 확정되었습니다.</string>
+    <string name="ROUTE_START_OK">점포 출발보고가 완료되었습니다.</string>
+    <string name="ROUTE_CUSTCOORD_ERROR">점포 오류보고가 완료되었습니다.</string>
+    <string name="ROUTE_CUSTCOORD_ERROR_FAIL">점포 오류보고가 실패하였습니다.</string>
+    <string name="NO_SELECT_ORDER">선택된 주문이 없습니다.</string>
+    <string name="ROUTE_FIRST_ORDER">첫번째 배송지로 경로를 검색합니다.</string>
+    <string name="ROUTE_NEXT_ORDER">다음배송지로 경로를 검색합니다.</string>
+    <string name="BTN_OPTI_YN">배송순서를 최적화하시겠습니까?</string>
+    <string name="BTN_OPTI_MSG_01">최적화옵션을 선택해주세요.</string>
+    <string name="BTN_CONFIRM_YN">배송순서를 확정하시겠습니까?</string>
+    <string name="BTN_START_YN">점포출발하시겠습니까?</string>
+    <string name="FINISH_REPORT_OK">점포 도착보고가 정상 처리 되었습니다.\n수고하셨습니다.</string>
+    <string name="FINISH_PROGRAM_YN">프로그램을 종료 하시겠습니까?</string>
+
+
+    <!-- 배송상세 -->
+    <string name="NOTICE_WORKSTAT_01">도착보고를 먼저하여야합니다.</string>
+    <string name="NOTICE_WORKSTAT_02">제휴 주문입니다. 제휴주문은 반품 접수가 제한되오니 배송 리스트에 반품 내용을 메모하신후 점포실장 님에게 전달해 주세요.</string>
+    <string name="NOTICE_SKIPREPORT_01">SKIP보고를 하시겠습니까? 업무종료 전 다시 도착보고를 하실 수 있습니다.</string>
+    <string name="NOTICE_NOTDELIVERY_01">배송지에 가지않음으로 보고하시겠습니까?</string>
+    <string name="RETURN_INPUT_CHECK_01">주문수량보다 많은 수량이 입력되었습니다.\n재확인 바랍니다.</string>
+    <string name="RETURN_INPUT_CHECK_02">반품수량을 입력해주세요.</string>
+    <string name="RETURN_INPUT_CHECK_03">반품사유를 선택해주세요.</string>
+
+    <!-- 배송완료 -->
+    <string name="STATUS_SELECT_CHECK_01">선택된 배송상황이 없습니다.\n재확인 바랍니다.</string>
+    <string name="DELIVERY_DONE_CHECK_01">작성된 서명이 없습니다.\n재확인 바랍니다.</string>
+    <string name="DELIVERY_DONE_CHECK_02">배송완료 보고하시겠습니까?</string>
+    <string name="DELIVERY_DONE_CHECK_03">배송지에 가지않음(미배송) 보고를 하시겠습니까?</string>
+    <string name="DELIVERY_DONE_CHECK_04">파일생성에 실패하였습니다. 잠시뒤 재시도 바랍니다.</string>
+    <string name="DELIVERY_DONE_CHECK_05">고객이 먼저 연락하여 시간이 변경되었습니까?</string>
+    <string name="title_activity_cvo_main">CvoMainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

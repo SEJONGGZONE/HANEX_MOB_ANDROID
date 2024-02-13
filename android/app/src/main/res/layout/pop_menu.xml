@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_margin="0dp"
+    android:padding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:paddingTop="0dp">
+
+            <View
+                android:id="@+id/pop_menu_back_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:alpha="0.4"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#e60013"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="0dp"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="9dp"
+                        android:gravity="left"
+                        android:text="메 뉴"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/pop_menu_close_ll"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/button_close_02" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/pop_menu_msg_ll"
+                    style="@style/layoute_menu_01">
+
+                    <ImageView
+                        style="@style/image_menu_01"
+                        android:src="@drawable/pop_menu_img_1" />
+
+                    <TextView
+                        style="@style/text_menu_01"
+                        android:text="메시지함"
+                        android:textColor="@drawable/pop_menu_txt_selector" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#b9b8b8"/>
+                <LinearLayout
+                    android:id="@+id/pop_menu_changepassword_ll"
+                    style="@style/layoute_menu_01">
+
+                    <ImageView
+                        style="@style/image_menu_01"
+                        android:src="@drawable/pop_menu_img_10" />
+
+                    <TextView
+                        style="@style/text_menu_01"
+                        android:text="비밀번호 변경"
+                        android:textColor="@drawable/pop_menu_txt_selector" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#b9b8b8"/>
+                <LinearLayout
+                    android:id="@+id/pop_menu_setting_ll"
+                    style="@style/layoute_menu_01">
+
+                    <ImageView
+                        style="@style/image_menu_01"
+                        android:src="@drawable/pop_menu_img_3" />
+
+                    <TextView
+                        style="@style/text_menu_01"
+                        android:text="환경설정"
+                        android:textColor="@drawable/pop_menu_txt_selector" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#b9b8b8"/>
+                <LinearLayout
+                    android:id="@+id/pop_menu_map_ll"
+                    style="@style/layoute_menu_01">
+
+                    <ImageView
+                        style="@style/image_menu_01"
+                        android:src="@drawable/pop_menu_img_4" />
+
+                    <TextView
+                        style="@style/text_menu_01"
+                        android:text="지도보기"
+                        android:textColor="@drawable/pop_menu_txt_selector" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#b9b8b8"/>
+                <LinearLayout
+                    android:id="@+id/mydelivery_ll"
+                    style="@style/layoute_menu_01">
+
+                    <ImageView
+                        style="@style/image_menu_01"
+                        android:src="@drawable/pop_menu_img_5" />
+
+                    <TextView
+                        style="@style/text_menu_01"
+                        android:text="나의배송건"
+                        android:textColor="@drawable/pop_menu_txt_selector" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#b9b8b8"/>
+                <LinearLayout
+                    android:id="@+id/mydelivery_confirm_ll"
+                    style="@style/layoute_menu_01">
+
+                    <ImageView
+                        style="@style/image_menu_01"
+                        android:src="@drawable/pop_menu_img_6" />
+
+                    <TextView
+                        style="@style/text_menu_01"
+                        android:text="배송이력확인"
+                        android:textColor="@drawable/pop_menu_txt_selector" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#b9b8b8"/>
+                <LinearLayout
+                    android:id="@+id/mydelivery_logout_ll"
+                    style="@style/layoute_menu_01">
+
+                    <ImageView
+                        style="@style/image_menu_01"
+                        android:src="@drawable/pop_menu_img_7" />
+
+                    <TextView
+                        style="@style/text_menu_01"
+                        android:text="로그아웃"
+                        android:textColor="@drawable/pop_menu_txt_selector" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#b9b8b8"/>
+                <LinearLayout
+                    android:id="@+id/mydelivery_out_ll"
+                    style="@style/layoute_menu_01">
+
+                    <ImageView
+                        style="@style/image_menu_01"
+                        android:src="@drawable/pop_menu_img_8" />
+
+                    <TextView
+                        style="@style/text_menu_01"
+                        android:text="프로그램 종료"
+                        android:textColor="@drawable/pop_menu_txt_selector" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:background="#b9b8b8"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+</FrameLayout>

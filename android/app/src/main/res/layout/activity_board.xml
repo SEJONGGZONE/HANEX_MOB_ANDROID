@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gzonesoft.sg623.ui.BoardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_tile_small_ilove_ci_01"
+        >
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"
+            />
+        <!--하단버튼-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            >
+            <!--하단 버튼 표시-->
+            <com.ssomai.android.scalablelayout.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:scale_base_width="100"
+                app:scale_base_height="15"
+                android:visibility="gone"
+                >
+                <!--버튼 영역-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:scale_width="100"
+                    app:scale_height="15"
+                    app:scale_left="0"
+                    app:scale_top="0"
+                    >
+                    <com.ssomai.android.scalablelayout.ScalableLayout
+                        android:id="@+id/area_action_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        app:scale_base_width="100"
+                        app:scale_base_height="15"
+                        >
+                        <!--버튼-->
+                        <Button
+                            android:id="@+id/btnMore"
+                            style="@style/btnStyle_09"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/nanumgothicbold"
+                            android:text="추 가 촬 영"
+                            app:scale_width="100"
+                            app:scale_height="15"
+                            app:scale_left="0"
+                            app:scale_top="0"
+                            app:scale_textsize="7"
+                            />
+                    </com.ssomai.android.scalablelayout.ScalableLayout>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/ivCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera_black_24dp"
+                    app:scale_width="10"
+                    app:scale_height="10"
+                    app:scale_left="15"
+                    app:scale_top="2.5"
+                    android:tag="10"
+                    android:alpha="0.8"
+                    />
+            </com.ssomai.android.scalablelayout.ScalableLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--떠있는버튼-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="4dp"
+        android:backgroundTint="#486DC1"
+        app:srcCompat="@drawable/icon_close_01" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

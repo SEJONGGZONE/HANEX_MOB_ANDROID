@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/flMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@drawable/bg_tile_cookzzang_ci_01"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#00FFFFFF"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#00FFFFFF"
+        />
+
+    <!--메인 컨텐츠영역-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <!--검색 영역-->
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:id="@+id/scSearchArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_base_width="100"
+            app:scale_base_height="17"
+            android:background="#C8FFFFFF"
+            >
+            <!--검색어 입력-->
+            <AutoCompleteTextView
+                android:id="@+id/actvKeyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DEF1FF"
+                android:paddingLeft="15dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:hint="검색어 입력"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#243460"
+                android:textColorHint="#506CBB"
+                app:scale_width="98"
+                app:scale_height="15"
+                app:scale_left="1"
+                app:scale_textsize="6"
+                app:scale_top="1"
+                />
+            <!--검색어 삭제-->
+            <Button
+                android:id="@+id/btnDeleteKeyword"
+                android:background="@drawable/selector_style_round_bg_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/nanumgothic"
+                android:textAlignment="center"
+                android:text="X"
+                android:textColor="#CC506CBB"
+                app:scale_left="86"
+                app:scale_top="5"
+                app:scale_width="9"
+                app:scale_height="9"
+                app:scale_textsize="5"
+                />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#8A506CBB"
+                app:scale_width="98"
+                app:scale_height="0.3"
+                app:scale_left="1"
+                app:scale_top="16.1"
+                />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <!--아이템리스트(세로)-->
+        <ScrollView
+            android:id="@+id/scrollItemList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            >
+            <LinearLayout
+                android:id="@+id/llItemList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="100dp"
+                >
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

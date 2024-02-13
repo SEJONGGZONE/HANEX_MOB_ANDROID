@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ItemListActivity">
+
+    <!--상단 타이틀 영역-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_main_topbar_blue_02"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="#ffffff"
+        android:padding="0dp"
+        >
+        <!--타이틀-->
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:scale_base_width="100"
+            app:scale_base_height="13"
+            >
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:text=""
+                android:fontFamily="@font/nanumgothicbold"
+                app:scale_textsize="6"
+                app:scale_width="60"
+                app:scale_height="10"
+                app:scale_left="20"
+                app:scale_top="1.5"
+                />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <!--메인 컨텐츠영역-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--좌측상단 뒤로가기-->
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:scale_base_width="100"
+            app:scale_base_height="13"
+            >
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_bar_back"
+                app:scale_height="10"
+                app:scale_left="2"
+                app:scale_top="2"
+                app:scale_width="10" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <!--메인 컨텐츠영역-->
+        <include layout="@layout/content_clientlist" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

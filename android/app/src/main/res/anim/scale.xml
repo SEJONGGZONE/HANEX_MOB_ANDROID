@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    위치 이동: <translate>, 회전: <rotate>, 확대/축소: <scale>, 투명도: <alpha>
+    애니메이션 집합(여러 애니메이션 동작): <set>
+    <set> 태그 안에는 여러 개의 태그가 들어갈 수 있다.
+
+    startOffset: 시작시간
+    duration: 지속시간
+    pivotX, pivotY: X축, Y축
+    fromXScale,fromYScale: 시작할 때의 확대/축소비율
+    toXScale, toYScale: 끝날 때의 확대/축소비율
+-->
+<!-- 원래의 크기에서 세 배의 크기로 확대되고, 줄어드는 애니메이션 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+        android:duration="2500"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="3.0"
+        android:toYScale="3.0" />
+
+    <scale
+        android:startOffset="1500"
+        android:duration="2500"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:toXScale="0.3"
+        android:toYScale="0.3" />
+</set>
